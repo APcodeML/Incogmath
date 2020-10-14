@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead mb-0" style="background-image: url('{{ url_for('static', filename='img/abc.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>IncogMath</h1>
+              <span class="subheading">Your Math Friend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<img src="{{ url_for('static', filename='img/1.png') }}" alt="ans" height="200" style="margin:5px 80px 5px 80px">
+<img src="{{ url_for('static', filename='img/2.png') }}" alt="ans" height="200" style="margin:5px 80px 5px 80px">
+<img src="{{ url_for('static', filename='img/3.png') }}" alt="ans" height="200" style="margin:5px 80px 5px 80px">
+<img src="{{ url_for('static', filename='img/4.png') }}" alt="ans" height="200" style="margin:5px 80px 5px 80px">
+    <!-- Main Content -->
+
+
+    <div class="container-fluid" style="background-image: url('https://scx2.b-cdn.net/gfx/news/hires/2019/howtoovercom.jpg'); ">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto my-5" style=" border-radius: 20px ; backdrop-filter: blur(4px)">
+          <div class="post-preview">
+            <a href="post.html" style="color: white">
+              <h2 class="post-title py-4">
+                MATHEMATICS is not about numbers, permutations, Algorithms: It’s about Understanding.
+              </h2>
+              <h3 class="post-subtitle">
+        
+              </h3>
+            </a>
+            <p class="post-meta">
+              <a href="#"></a>
+              </p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html" style="color: white">
+              <h2 class="post-title py-3">
+                Solution lies in the problem itself.
+              </h2>
+            </a>
+            <p class="post-meta">
+              <a href="#"></a>
+              </p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html" style="color: white">
+              <h2 class="post-title py-4">
+                Ques.What is the area of the circle x^2 + y^2 =25?
+
+              </h2>
+              <h3 class="post-subtitle py-2">
+                Sol. We know that general equation of circle is (x-a)^2 + (y-b)^2 = r^2
+                        where (a,b) is centre and r is radius.......
+              </h3>
+            </a>
+            <p class="post-meta">
+              <a href="#"></a>
+              </p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html" style="color: white">
+              <h2 class="post-title">
+                 Ques.What is the area of the circle x^2 + y^2 =25?
+              </h2>
+              <h3 class="post-subtitle">
+                 Sol. We know that general equation of circle is (x-a)^2 + (y-b)^2 = r^2
+                        where (a,b) is centre and r is radius.......
+              </h3>
+            </a>
+            <p class="post-meta">
+              <a href="#"></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+          
+          <!-- Pager -->
+     <img src="{{ url_for('static', filename='img/abc.jpg') }}" alt="anshu" height="200" style="margin:5px 9px 5px 10px">
+<img src="{{ url_for('static', filename='img/abc.jpg') }}" alt="anshu" height="200" style="margin:5px 9px 5px 10px">     
+          
+    {% endblock %}

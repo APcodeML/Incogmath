@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/images12.jfif') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">This is what I do.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p style="font-size: 25px">We are group of Math enthusiast here to find a different approach to Math. If you feel any doubts in Math or not able to solve any problem. This is the place where you will get your problem solved. With a panel of people who love math we will make sure that your Problem is not only solved but you have learned a new and better approach. </p>
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}

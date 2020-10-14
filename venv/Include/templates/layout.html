@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://kit.fontawesome.com/d995cac100.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+      <!--<link rel="stylesheet" href="bootstrap-social.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>IncogMath-Your Math Friend</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/fontawesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+  <style type="text/css">
+    a{color: white; }
+</style>
+  </head>
+
+  <body> <!--lavenderblush lavender #f1fed7-->
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/">IncogMath</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+          <!--Menu
+          <i class="fa fa-bars"></i>-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Ask Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+{% block body %} {% endblock %}
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="background-color:black">
+        <div class="row">
+          <div class="col-3 align-self-center">
+            <h3>Our Address:</h3>
+            <p class="my-0">A-20,Sindhi Colony, kalwar road jhotwara jaipur rajasthan(302012)</p>
+          </div>
+          <div class="col-3 align-self-center">
+            <h3>Support:</h3>
+            <a href="#">incogmath@gmail.com</a>
+               <a href="#">akash@gmail.com</a> 
+                <a href="#">prabhat@gmail.com</a> 
+          </div>
+          <div class="col-6 align-self-center text-center">
+            <div class="btn-group">
+            <a class="btn-social-icon btn-twitter mx-1" href="https://www.twitter.com/"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.facebook.com/" class="btn-social-icon btn-facebook mx-1"><i class="fab fa-facebook-official"></i></a>
+            <a href="https://www.google.com" class="btn-social-icon btn-google mx-1"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:apnesh.rawat@gmail.com" class="btn-social-icon btn-google mx-1"><i class="fab fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/incogmaths" class="btn-social-icon btn-instagram mx-1"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="btn-tumblr btn-social-icon mx-1"><i class="fab fa-skype"></i></a>
+            <a href="https://wa.me/+919549948503"  style="background-color: limegreen; color:white"><i class="fab fa-whatsapp"></i></a> 
+            </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>
+
