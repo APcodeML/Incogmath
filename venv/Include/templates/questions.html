@@ -2,7 +2,7 @@
 {% block body %}
     <!-- Page Header -->
 
-    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/download.jpg') }}')">
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/download.jpg') }}') ; margin-bottom: 0" >
 
       <div class="overlay"></div>
       <div class="container">
@@ -12,11 +12,11 @@
               <h1>Ask your Question</h1>
 
 
-               <form name="question" id="questionForm" action = "/post" method="post" novalidate enctype="multipart/form-data">
+               <form name="question" id="questionForm" action = "/post" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1"></label>
 
-                  <textarea class="form-control" id="exampleFormControlTextarea1" name="ques" rows="3" placeholder="Type your question"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" name="ques" rows="3" placeholder="Type your question" required="required"></textarea>
 
                     <div class="form-group">
 
@@ -26,16 +26,22 @@
 
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" required="required">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Whatsapp Number</label>
-                <input type="email" class="form-control" id="Number" name="mobile" placeholder="+9145454545">
+                <input type="email" class="form-control" id="Number" name="mobile" placeholder="+9145454545" required="required">
               </div>
                <br>
             <div id="success"></div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+              <button type="submit" class="btn btn-primary" onclick="myFunction()" id="sendMessageButton">Send</button>
+
+                  <script>
+              function myFunction() {
+              alert("Hello! I am an alert box!");
+                }
+                  </script>
             </div>
             </form>
             </div>
@@ -46,7 +52,7 @@
 
 
     <!-- Main Content -->
-    <div class="container">
+<!--    <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
@@ -102,11 +108,11 @@
               on July 8, 2018</p>
           </div>
           <hr>
-          <!-- Pager -->
+         S
           <div class="clearfix">
             <a class="btn btn-primary float-right" href="#">Older Posts →</a>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     {% endblock %}
